@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}%
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{stackengine}
+\def\stackalignment{l}
+\usepackage[colorlinks]{hyperref}
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+
+%\usepackage{geometry}
+%\geometry{top = 0.9in}
+\usepackage{appendix}
+
+\newcounter{subfigure}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\S}{\mathbb{S}^1}
+\renewcommand{\Re}{\text{Re}}
+\newcommand{\ea}{\textit{et al. }}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\th}{\text{th}}
+\newcommand{\sgn}{\operatorname{sgn}}
+
+\renewcommand{\setminus}{\smallsetminus}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\definecolor{red}{rgb}{0.8500, 0.3250, 0.0980}
+\definecolor{green}{rgb}{0.4660, 0.6740, 0.1880}
+\definecolor{yellow}{rgb}{0.9290, 0.6940, 0.1250}
+\definecolor{blue}{rgb}{0, 0.4470, 0.7410}
+
+
+\begin{document}
+
+\title{Coding Project 4:  Teaching a Computer to Recognize Written Numbers}
+
+\author{Your Name}
+\date{}
+
+\maketitle
+
+
+\begin{abstract}
+{\color{red} [[Short abstract (5 or 6 sentences) stating in plain language what you did in the project.]]}
+\end{abstract}
+
+
+\section{Introduction}
+\label{Sec: Intro}
+
+{\color{red} [[1 short paragraph on what machine learning is (kind of a ELI5 for ML).  No need to reference anything, just want you to get into the habit of thinking about science from a historical/societal aspect.  Also, feel free to get this from the book and wikipedia, just paraphrase to avoid plagiarism.]]}
+
+\bigskip
+\bigskip
+
+{\color{red} [[1 paragraph outlining the remainder of the report.]]}
+
+
+\section{Theoretical Background}
+
+{\color{red}[[A sentence or two on what you'll talk about in this section.]]}
+
+
+\subsection{Linear Discriminant Analysis}
+
+{\color{red}[[A few paragraphs going over what LDA is with equations for the important steps.  This can be taken directly from the book/lecture, but paraphrase to avoid plagiarism.]]}
+
+
+\section{Results}
+
+{\color{red}[[Put your result plots here.  Explain the plots (a short paragraph for each test).  Make sure the caption for your figure can be understood without having to read the exposition.]]}
+
+{\color{red}[[Since I didn't talk about it too much in the coding template, I'll write out which plots to include here:  1)  Plot the singular values, 2)  Plot the data on the projected space (just like we did in the lecture in \verb|Week7_LDA.m|), 3) Let's see what happens when we give the algorithm new images:  take pictures of your own hand written digits form 0 to 9 and see if the algorithm can classify them.]]}
+
+{\color{red}[[Optional:  Since the MATLAB and similar Python algoirthms are so different, I won't expect it, but if you were able to use a support vector machine or decision tree from the \verb|fitc| functions, comment on how they compare to using LDA.]]}
+
+
+\section{Conclusion}\label{Sec: Conclusion}
+
+{\color{red}[[A paragraph summarizing the report.]]}
+
+
+{\color{red}[[1 paragraph:  If you were able to get better than 77\% success for all 10, let me know because I couldn't.]]}
+
+
+\section*{Acknowledgment}
+
+{\color{red}[[You are welcome to get help on the project from others:  students in the class, TAs, stack overflow, etc.  Just make sure to thank anyone who helped you on the project.  If you truly didn't get any help from anyone, please feel free to skip this section.]]}
+
+
+\bigskip
+\bigskip
+\bigskip
+
+{\color{red}[[Don't worry about references.]]}
+
+
+\end{document}
